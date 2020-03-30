@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import TweetsBody from "./TweetsBody";
 
 import CreateTweet from "./CreateTweet";
+import Sidenav from "./Sidenav";
+
 
 
 
@@ -27,7 +30,7 @@ function App(){
 
     return (<div>
         <Header/>
-        <main>
+        <Sidenav/>
         <CreateTweet
             onAdd={addTweet}
         />
@@ -40,7 +43,7 @@ function App(){
         onDelete = {deleteTweet}
     />
     )}
-        </main>
+        
         <Footer/>
 
     </div>);

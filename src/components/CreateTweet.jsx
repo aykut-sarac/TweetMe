@@ -34,7 +34,7 @@ function CreateTweet(props){
             onChange={handleChange} 
             value={tweet.username} 
             placeholder= "username"
-
+            
             />
             <textarea 
             name="tweets" 
@@ -42,7 +42,7 @@ function CreateTweet(props){
             value={tweet.tweets} 
             placeholder="tweet" 
             rows= "3"
-
+            
             />
             <button onClick={submitTweet}>Tweet</button>
 
