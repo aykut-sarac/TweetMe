@@ -6,7 +6,9 @@ function Footer(){
     const currentYear = new Date().getUTCFullYear();
 
     return (<div>
-        <footer>Copyright © {currentYear} Aykut Sarac</footer>
+        <footer>
+        <p>Copyright © {currentYear} Aykut Sarac</p>
+        </footer>
     </div>);
 }
 
