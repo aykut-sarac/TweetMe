@@ -7,6 +7,7 @@ function TweetsBody(props){
     }
 
     return (<div className="tweets">
+        <img class="avatar" src="https://publicdomainvectors.org/photos/Linux-Avatar.png"></img>
         <h2>{props.username}</h2>
         <p>{props.tweets}</p>
         <button onClick={handleClick}>

@@ -26,67 +26,30 @@
     display: block;
     position: relative;
     padding-bottom: 50px; /* height of  footer */
-    margin-left: 10rem;
+    
    }
 
 
-  header {
+  nav {
     background-color: #00acee;
-    margin: auto -16px;
+    
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
-  }
-  
-  header h1 {
     color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    overflow-x: hidden;
-    padding-top: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    font-family: "McLaren", cursive;
-    padding: 16px 20px;
-    font-size:2vw;
+     
     
   }
   
-  .sidenav a {
-    padding: 6px 6px 6px 10px;
-    text-decoration: none;
+  nav li a{
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
-    color: black;
-    display: block;
   }
   
-  .sidenav a:hover {
-    color: #00acee;
+  .navbar-brand {
+    padding-top: 0 !important;
   }
-
-  .sidenav i {
-    padding: 6px 6px 6px 32px;
-    color: #00acee;
-    font-size:3vw;
-    display: inline-block;
-    
-
-  }
-
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
 
   footer {
     position: absolute;
@@ -102,8 +65,9 @@
   }
   .tweets {
     position: relative;
-    width: 480px;
-    margin: 30px auto 20px auto;
+    width: 280px;
+    
+    margin: 100px auto 20px auto;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
@@ -136,13 +100,22 @@
   
   form {
     position: relative;
-    width: 480px;
-    margin: 30px auto 20px auto;
+    width: 280px;
+    
+    margin: 100px auto 20px auto;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
   }
+  .avatar {
+    vertical-align: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+  }
+
   form input,
   form textarea {
     width: 100%;
@@ -152,19 +125,20 @@
     font-size: 1.2em;
     font-family: inherit;
     resize: none;
+    margin-bottom: 30px;
   }
   form button {
     position: absolute;
     right: 18px;
     bottom: 10px;
-    background: #00acee;
+    background: #00acee !important;
     color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
+    padding: 0 !important;
+    width: 4rem;
+    height: 2rem;
+    box-shadow: none !important;
+    cursor: default !important;
+    outline: none !important;
   }
+
   

@@ -4,7 +4,8 @@ function CreateTweet(props){
 
     const [tweet,setTweet] = useState({
         username: "",
-        tweets: ""
+        tweets: "",
+        
     });
 
     function handleChange(event){
@@ -22,29 +23,37 @@ function CreateTweet(props){
         props.onAdd(tweet);
         setTweet({
             username: "",
-            tweets: ""
+            tweets: "",
+            
+
         });           
         event.preventDefault();
     }
 
     return (<div>
         <form>
-            <input 
+            <img 
+            src="https://publicdomainvectors.org/photos/Linux-Avatar.png" 
+            alt= "Avatar" 
+            class="avatar"
+            
+        />
+            {/* <input 
             name= "username" 
             onChange={handleChange} 
             value={tweet.username} 
             placeholder= "username"
             
-            />
+            /> */}
             <textarea 
             name="tweets" 
             onChange={handleChange} 
             value={tweet.tweets} 
             placeholder="tweet" 
-            rows= "3"
+            rows= "2"
             
             />
-            <button onClick={submitTweet}>Tweet</button>
+            <button class=" btn btn-primary" onClick={submitTweet}>Tweet</button>
 
         </form>
     </div>);
