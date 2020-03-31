@@ -13,7 +13,7 @@ function App(){
 
     function addTweet(newTweet) {
         setTweets(prevTweets => {
-            return [...prevTweets,newTweet];
+            return [newTweet,...prevTweets];
         });
     }
 
@@ -29,41 +29,37 @@ function App(){
         
         return (
             <div className="tweets">
-            <img className="avatar" src={props.img}/>
-            <h2>{props.username}</h2>
-            <p>{props.tweets}</p>
-            
-        </div>
+                <div>
+                    <img className="avatar" src={props.img}/>
+                    <h2>{props.username}</h2>
+                </div>
+                <p>{props.tweets}</p>
+            </div>
         )
     }
 
-    return (<div class= "wrapper">
+    return (<div className= "wrapper">
         
         <Navbar/>
-        
-        <CreateTweet
-            onAdd={addTweet}
-        />
-        
-         {sampleTweets.map((tweetItem) => <TweetSamples 
-         username={tweetItem.username}
-         tweets={tweetItem.tweets}
-         img={tweetItem.img}
-
-         /> )}
-        
+        <CreateTweet onAdd={addTweet}/>
         {tweets.map((tweetItem,index) => <TweetsBody
         id= {index}
         key = {index}
         username={tweetItem.username}
         tweets = {tweetItem.tweets}
         onDelete = {deleteTweet}
-    />
-    )}
+        /> )}
+        {sampleTweets.map((tweetItem) => <TweetSamples
+         key={tweetItem.key}
+         username={tweetItem.username}
+         tweets={tweetItem.tweets}
+         img={tweetItem.img}
+         /> )}
+        
         
         <Footer/>
 
-    </div>);
+            </div>);
 }
 
 

@@ -66,8 +66,7 @@
   .tweets {
     position: relative;
     width: 280px;
-    
-    margin: 100px auto 20px auto;
+    margin: 40px auto 20px auto;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
@@ -75,9 +74,14 @@
     
     
   }
-  .tweets h1 {
+
+  .tweets h2 {
     font-size: 1.1em;
     margin-bottom: 6px;
+    position: relative;
+    padding: 1rem 1rem ;
+    text-align: center;
+    display: inline-flex;
   }
   .tweets p {
     font-size: 1.1em;
@@ -101,12 +105,12 @@
   form {
     position: relative;
     width: 280px;
-    
     margin: 100px auto 20px auto;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
+
   }
   .avatar {
     vertical-align: left;
@@ -115,8 +119,7 @@
     border-radius: 50%;
 
   }
-
-  form input,
+  
   form textarea {
     width: 100%;
     border: none;
@@ -126,6 +129,17 @@
     font-family: inherit;
     resize: none;
     margin-bottom: 30px;
+  }
+
+  form input {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    position: relative;
+    
+    text-align:center;
+    display: inline-flex;
+    border: none;
+
   }
   form button {
     position: absolute;

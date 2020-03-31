@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function CreateTweet(props){
 
     const [tweet,setTweet] = useState({
-        username: "",
+        username: "Player1",
         tweets: "",
         
     });
@@ -22,7 +22,7 @@ function CreateTweet(props){
     function submitTweet(event){
         props.onAdd(tweet);
         setTweet({
-            username: "",
+            username: "Player1",
             tweets: "",
             
 
@@ -32,28 +32,31 @@ function CreateTweet(props){
 
     return (<div>
         <form>
+            <div>
             <img 
             src="https://publicdomainvectors.org/photos/Linux-Avatar.png" 
             alt= "Avatar" 
-            class="avatar"
+            className="avatar"
             
         />
-            {/* <input 
+            <input 
             name= "username" 
             onChange={handleChange} 
-            value={tweet.username} 
-            placeholder= "username"
+            value= {tweet.username} 
+            placeholder= "Player1"
             
-            /> */}
+            
+            /> 
+            </div>
             <textarea 
             name="tweets" 
             onChange={handleChange} 
             value={tweet.tweets} 
-            placeholder="tweet" 
+            placeholder="Howdy? Please insert Coin!" 
             rows= "2"
             
             />
-            <button class=" btn btn-primary" onClick={submitTweet}>Tweet</button>
+            <button className=" btn btn-primary" onClick={submitTweet}>Tweet</button>
 
         </form>
     </div>);
