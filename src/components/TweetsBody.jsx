@@ -8,7 +8,7 @@ function TweetsBody(props){
 
     return (<div className="tweets">
                 <div>
-                <img className="avatar" src="https://publicdomainvectors.org/photos/Linux-Avatar.png"></img>
+                <img className="avatar" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_female_woman_avatar-512.png"></img>
                 <h2>{props.username}</h2>
                 </div>
         <p>{props.tweets}</p>
